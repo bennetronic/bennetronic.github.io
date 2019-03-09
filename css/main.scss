@@ -13,7 +13,7 @@ $colors: (
 $padding: 5px;
 $borders: 5px;
 
-$desktop: 450px;
+$desktop: 600px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
@@ -29,25 +29,30 @@ body, html {
 }
 
 body {
-
-    font-family: 'lato';
     margin: 0;
 
+    font-family: 'lato';
+
     #bg {
-        background-color: map-get($colors, primary);
-        width: 100%;
-        height: 100%;
         position: fixed;
         z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: map-get($colors, primary);
     }
 
     nav {
-        overflow: hidden;
-        background-color: map-get($colors, primary-dark);
         position: fixed;
-        top: 0;
-        width: 100%;
         z-index: 1;
+        top: 0;
+
+        overflow: hidden;
+
+        width: 100%;
+
+        background-color: map-get($colors, primary-dark);
 
           .nav-logo {
               width: 20px;
@@ -56,21 +61,26 @@ body {
           }
 
             ul {
-              text-align: center;
-              list-style-type: none;
-              list-style-type: none;
               margin: 0;
               padding: 0px;
+
+              list-style-type: none;
+              list-style-type: none;
+
+              text-align: center;
 
               li {
                 display: inline;
                 //font-family: "Fira Sans", sans-serif;
+
                 font-size: 17px;
 
                 a {
-                  color: #f2f2f2;
-                  text-decoration: none;
                   padding: 14px;
+
+                  text-decoration: none;
+
+                  color: #f2f2f2;
                   &:hover {
                     background-color: #111;
                   }
@@ -83,21 +93,21 @@ body {
     header {
         margin: 0;
         padding: 60px 0 20px 0;
-
     }
 
     h1 {
-        font-size: 3em;
-        font-weight: 100;
-        //letter-spacing: .25em;
-        color: map-get($colors, white);
+        display: block;
+
+        padding: 5px;
+
+        text-align: center;
         text-decoration: none;
         text-transform: uppercase;
 
-        text-align: center;
-        padding: 5px;
-        // margin: 0;
-        display: block;
+        color: map-get($colors, white);
+
+        font-size: 3em;
+        font-weight: 100;
 
             @include desktop {
                 font-size: 5em;
@@ -105,16 +115,19 @@ body {
     }
 
     h2 {
+        display: block;
+
+        padding: 5px;
+
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: .25em;
+        text-transform: uppercase;
+
+        color: map-get($colors, accent);
+
         font-size: 1.5em;
         font-weight: 100;
-        letter-spacing: .25em;
-        color: map-get($colors, accent);
-        text-decoration: none;
-        text-align: center;
-        padding: 5px;
-        // margin: 0;
-        display: block;
-        text-transform: uppercase;
 
             @include desktop {
                 font-size: 2em;
@@ -122,14 +135,17 @@ body {
     }
 
     h4 {
+        padding: 5px;
+
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: .25em;
+        text-transform: uppercase;
+
+        color: map-get($colors, accent);
+
         font-size: 1.5em;
         font-weight: 100;
-        letter-spacing: .25em;
-        color: map-get($colors, accent);
-        padding: 5px;
-        text-decoration: none;
-        text-align: center;
-        text-transform: uppercase;
 
           @include desktop {
               font-size: 1em;
@@ -137,13 +153,16 @@ body {
     }
 
     p {
+        padding: 10px;
+
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: .2em;
+
+        color: map-get($colors, white);
+
         font-size: 1em;
         font-weight: 100;
-        letter-spacing: .2em;
-        color: map-get($colors, white);
-        padding: 10px;
-        text-decoration: none;
-        text-align: center;
 
         @include desktop {
             font-size: .75em;
@@ -157,8 +176,9 @@ body {
     }
 
     main {
-          padding: $padding;
           display: block;
+
+          padding: $padding;
 
           .cards{
               @include desktop {
@@ -181,63 +201,44 @@ body {
 
 
           .card {
-              background-color: map-get($colors, primary-dark);
-              width: 80%;
-              margin: 3em auto;
-              //box-shadow: 0 10px 30px rgba(46, 49, 49, 1);
-              padding: $padding;
-              border-radius: 5px;
-
               position: relative;
               top: 0;
+
+              width: 80%;
+              margin: 3em auto;
+              padding: $padding;
+
               transition: all .2s ease-in;
 
-              // @include desktop {
-              //     display: grid;
-              //     grid-template-columns: 50% auto;
-              //     grid-template-areas: "card"
-              // }
+              border-radius: 5px;
+              background-color: map-get($colors, primary-dark);
 
-              @include desktop {
-                  margin: 1em auto;
-
-                  // display: flex;
-                  // flex-direction: column;
-                  // justify-content: space-between;
-              }
+                  @include desktop {
+                      margin: 1em auto;
+                  }
 
           }
 
           .card:hover {
               top: -2px;
-              //box-shadow: 0 4px 5px rgba(46, 49, 49, 1));
             }
 
           .card-img {
+              display: block;
+
               width: 95%;
               margin: .5em auto;
-              display: block;
 
               border-radius: $borders;
               box-shadow: 0 10px 30px rgba(0,0,0,.2);
           }
 
           .card-text-container {
-              //padding: px;
-              flex: 1;
-
               display: flex;
+              flex: 1;
               flex-direction: column;
               justify-content: space-between;
           }
-
-          // .card p {
-          //     //margin: 0;
-          //     flex: 1;
-          //     line-height: 1.4em;
-          //     //justify-content: space-between;
-          // }
-
 
           .cards a {
               text-decoration: none;
@@ -245,6 +246,7 @@ body {
 
           .card-tag {
               letter-spacing: .2em;
+
               color: map-get($colors, tags);
           }
 
@@ -254,13 +256,9 @@ body {
     footer {
         margin: 0 auto;
         padding: 10px;
-        //background-color: map-get($colors, primary);
 
         .copyright {
-            //color: #fff;
-            //text-align: center;
-            //padding: 10px;
-
+        //
         }
     }
 }
