@@ -1,0 +1,226 @@
+/* line 26, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body, html {
+		height: 100%;
+		margin: 0;
+}
+
+/* line 31, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body {
+		font-family: 'lato';
+		margin: 0;
+}
+
+/* line 36, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body #bg {
+		background-color: #000;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: -1;
+}
+
+/* line 44, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body nav {
+		overflow: hidden;
+		background-color: #1f1f1f;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+}
+
+/* line 52, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body nav .nav-logo {
+		width: 20px;
+		padding: 10px;
+}
+
+/* line 58, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body nav ul {
+		text-align: center;
+		list-style-type: none;
+		list-style-type: none;
+		margin: 0;
+		padding: 0px;
+}
+
+/* line 65, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body nav ul li {
+		display: inline;
+		font-size: 17px;
+}
+
+/* line 70, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body nav ul li a {
+		color: #f2f2f2;
+		text-decoration: none;
+		padding: 14px;
+}
+
+/* line 74, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body nav ul li a:hover {
+		background-color: #111;
+}
+
+/* line 83, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body header {
+		margin: 0;
+		padding: 60px 0 20px 0;
+}
+
+/* line 89, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body h1 {
+		font-size: 3em;
+		font-weight: 100;
+		color: #FFF;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 5px;
+		display: block;
+}
+
+@media (min-width: 840px) {
+		/* line 89, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+		body h1 {
+				font-size: 5em;
+		}
+}
+
+/* line 107, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body h2 {
+		font-size: 1.5em;
+		font-weight: 100;
+		letter-spacing: .25em;
+		color: #F7F573;
+		text-decoration: none;
+		text-align: center;
+		padding: 5px;
+		display: block;
+		text-transform: uppercase;
+}
+
+@media (min-width: 840px) {
+		/* line 107, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+		body h2 {
+				font-size: 2em;
+		}
+}
+
+/* line 124, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body h4 {
+		font-size: 1.5em;
+		font-weight: 100;
+		letter-spacing: .25em;
+		color: #F7F573;
+		padding: 5px;
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+}
+
+@media (min-width: 840px) {
+		/* line 124, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+		body h4 {
+				font-size: 1em;
+		}
+}
+
+/* line 139, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body p {
+		font-size: 1em;
+		font-weight: 100;
+		letter-spacing: .2em;
+		color: #FFF;
+		padding: 10px;
+		text-decoration: none;
+		text-align: center;
+}
+
+@media (min-width: 840px) {
+		/* line 139, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+		body p {
+				font-size: .75em;
+		}
+}
+
+/* line 154, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body h1, body h2, body h3, body h4, body h5, body p {
+		margin: 0;
+}
+
+/* line 159, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body main {
+		padding: 5px;
+		display: block;
+}
+
+@media (min-width: 840px) {
+		/* line 163, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+		body main .cards {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: auto;
+				grid-gap: 10px;
+		}
+}
+
+/* line 183, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body main .card {
+		background-color: #1f1f1f;
+		width: 80%;
+		margin: 3em auto;
+		padding: 5px;
+		border-radius: 5px;
+		position: relative;
+		top: 0;
+		transition: all .2s ease-in;
+}
+
+@media (min-width: 840px) {
+		/* line 183, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+		body main .card {
+				margin: 1em auto;
+		}
+}
+
+/* line 211, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body main .card:hover {
+		top: -2px;
+}
+
+/* line 216, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body main .card-img {
+		width: 95%;
+		margin: .5em auto;
+		display: block;
+		border-radius: 5px;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* line 225, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body main .card-text-container {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+}
+
+/* line 242, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body main .cards a {
+		text-decoration: none;
+}
+
+/* line 246, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body main .card-tag {
+		letter-spacing: .2em;
+		color: #336FFF;
+}
+
+/* line 254, Users/jamesbennetts/Sites/Projects/Portfolio-github/css/main.scss */
+body footer {
+		margin: 0 auto;
+		padding: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
