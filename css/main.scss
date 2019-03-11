@@ -13,7 +13,7 @@ $colors: (
 $padding: 5px;
 $borders: 5px;
 
-$desktop: 600px;
+$desktop: 840px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
@@ -55,7 +55,7 @@ body {
         background-color: map-get($colors, primary-dark);
 
           .nav-logo {
-              width: 20px;
+              width: 30px;
               padding: 10px;
               //background-color: #fff;
           }
@@ -110,7 +110,7 @@ body {
         font-weight: 100;
 
             @include desktop {
-                font-size: 5em;
+                font-size: 6em;
             }
     }
 
@@ -130,7 +130,7 @@ body {
         font-weight: 100;
 
             @include desktop {
-                font-size: 2em;
+                font-size: 3em;
             }
     }
 
@@ -148,7 +148,7 @@ body {
         font-weight: 100;
 
           @include desktop {
-              font-size: 1em;
+              font-size: 1.5em;
           }
     }
 
@@ -165,7 +165,7 @@ body {
         font-weight: 100;
 
         @include desktop {
-            font-size: .75em;
+            font-size: 1em;
         }
     }
 
