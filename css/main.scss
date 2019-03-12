@@ -17,10 +17,18 @@ $borders: 5px;
 $normal: 300;
 $thin: 100;
 
+// Screen sizes
 $desktop: 840px;
+$small-mobile: 325px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin small-mobile {
+    @media (max-width: #{$small-mobile}) {
         @content;
     }
 }
@@ -62,6 +70,10 @@ body {
               width: 30px;
               padding: 10px;
               //background-color: #fff;
+
+              @include small-mobile {
+                  padding: 5px;
+              }
           }
 
             ul {
@@ -91,65 +103,17 @@ body {
                 }
               }
             }
-
-              /* Popup container */
-              .phone-popup {
-                position: relative;
-                display: inline-block;
-                cursor: pointer;
-              }
-
-              /* The actual popup (appears on top) */
-              .phone-popup .phone-popuptext {
-                visibility: hidden;
-                width: 160px;
-                background-color: #555;
-                color: #fff;
-                text-align: center;
-                border-radius: 6px;
-                padding: 8px 0;
-                position: absolute;
-                z-index: 1;
-                bottom: 125%;
-                left: 50%;
-                margin-left: -80px;
-              }
-
-              /* Popup arrow */
-              .phone-popup .phone-popuptext::after {
-                content: "";
-                position: absolute;
-                top: 100%;
-                left: 50%;
-                margin-left: -5px;
-                border-width: 5px;
-                border-style: solid;
-                border-color: #555 transparent transparent transparent;
-              }
-
-              /* Toggle this class when clicking on the popup container (hide and show the popup) */
-              .phone-popup .show {
-                visibility: visible;
-                -webkit-animation: fadeIn 1s;
-                animation: fadeIn 1s
-              }
-
-              /* Add animation (fade in the popup) */
-              @-webkit-keyframes fadeIn {
-                from {opacity: 0;}
-                to {opacity: 1;}
-              }
-
-              @keyframes fadeIn {
-                from {opacity: 0;}
-                to {opacity:1 ;}
-              }
           }
 
 
     header {
         margin: 0;
-        padding: 60px 0 20px 0;
+        padding: 100px 0 20px 0;
+
+        @include desktop {
+            margin: 0;
+            padding: 60px 0 20px 0;
+        }
     }
 
     h1 {

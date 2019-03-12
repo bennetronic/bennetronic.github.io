@@ -1,16 +1,16 @@
-/* line 30, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 38, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body, html {
 		height: 100%;
 		margin: 0;
 }
 
-/* line 35, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 43, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body {
 		margin: 0;
 		font-family: 'lato';
 }
 
-/* line 40, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 48, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body #bg {
 		position: fixed;
 		z-index: -1;
@@ -19,7 +19,7 @@ body #bg {
 		background-color: #000;
 }
 
-/* line 50, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 58, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body nav {
 		position: fixed;
 		z-index: 1;
@@ -27,20 +27,22 @@ body nav {
 		overflow: hidden;
 		width: 100%;
 		background-color: #1f1f1f;
-		/* Popup container */
-		/* The actual popup (appears on top) */
-		/* Popup arrow */
-		/* Toggle this class when clicking on the popup container (hide and show the popup) */
-		/* Add animation (fade in the popup) */
 }
 
-/* line 61, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 69, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body nav .nav-logo {
 		width: 30px;
 		padding: 10px;
 }
 
-/* line 67, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+@media (max-width: 325px) {
+		/* line 69, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+		body nav .nav-logo {
+				padding: 5px;
+		}
+}
+
+/* line 79, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body nav ul {
 		margin: 0;
 		padding: 0px;
@@ -49,91 +51,39 @@ body nav ul {
 		text-align: center;
 }
 
-/* line 76, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 88, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body nav ul li {
 		display: inline;
 		font-size: 17px;
 }
 
-/* line 82, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 94, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body nav ul li a {
 		padding: 14px;
 		text-decoration: none;
 		color: #f2f2f2;
 }
 
-/* line 88, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 100, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body nav ul li a:hover {
 		background-color: #111;
 }
 
-/* line 96, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
-body nav .phone-popup {
-		position: relative;
-		display: inline-block;
-		cursor: pointer;
+/* line 109, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+body header {
+		margin: 0;
+		padding: 100px 0 20px 0;
 }
 
-/* line 103, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
-body nav .phone-popup .phone-popuptext {
-		visibility: hidden;
-		width: 160px;
-		background-color: #555;
-		color: #fff;
-		text-align: center;
-		border-radius: 6px;
-		padding: 8px 0;
-		position: absolute;
-		z-index: 1;
-		bottom: 125%;
-		left: 50%;
-		margin-left: -80px;
+@media (min-width: 840px) {
+		/* line 109, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+		body header {
+				margin: 0;
+				padding: 60px 0 20px 0;
+		}
 }
 
 /* line 119, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
-body nav .phone-popup .phone-popuptext::after {
-		content: "";
-		position: absolute;
-		top: 100%;
-		left: 50%;
-		margin-left: -5px;
-		border-width: 5px;
-		border-style: solid;
-		border-color: #555 transparent transparent transparent;
-}
-
-/* line 131, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
-body nav .phone-popup .show {
-		visibility: visible;
-		-webkit-animation: fadeIn 1s;
-		animation: fadeIn 1s;
-}
-
-@-webkit-keyframes fadeIn {
-		from {
-				opacity: 0;
-		}
-		to {
-				opacity: 1;
-		}
-}
-
-@keyframes fadeIn {
-		from {
-				opacity: 0;
-		}
-		to {
-				opacity: 1;
-		}
-}
-
-/* line 150, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
-body header {
-		margin: 0;
-		padding: 60px 0 20px 0;
-}
-
-/* line 155, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body h1 {
 		display: block;
 		padding: 5px;
@@ -146,14 +96,14 @@ body h1 {
 }
 
 @media (min-width: 840px) {
-		/* line 155, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+		/* line 119, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 		body h1 {
 				font-size: 6em;
 				font-weight: 100;
 		}
 }
 
-/* line 175, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 139, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body h2 {
 		display: block;
 		padding: 5px;
@@ -167,14 +117,14 @@ body h2 {
 }
 
 @media (min-width: 840px) {
-		/* line 175, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+		/* line 139, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 		body h2 {
 				font-size: 3em;
 				font-weight: 100;
 		}
 }
 
-/* line 196, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 160, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body h4 {
 		padding: 10px;
 		text-align: center;
@@ -187,14 +137,14 @@ body h4 {
 }
 
 @media (min-width: 840px) {
-		/* line 196, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+		/* line 160, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 		body h4 {
 				font-size: 1.5em;
 				font-weight: 100;
 		}
 }
 
-/* line 215, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 179, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body p {
 		padding: 15px;
 		text-align: center;
@@ -206,26 +156,26 @@ body p {
 }
 
 @media (min-width: 840px) {
-		/* line 215, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+		/* line 179, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 		body p {
 				font-size: 1em;
 				font-weight: 100;
 		}
 }
 
-/* line 234, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 198, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body h1, body h2, body h3, body h4, body h5, body p {
 		margin: 0;
 }
 
-/* line 239, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 203, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body main {
 		display: block;
 		padding: 5px;
 }
 
 @media (min-width: 840px) {
-		/* line 244, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+		/* line 208, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 		body main .cards {
 				display: grid;
 				grid-template-columns: 1fr 1fr 1fr;
@@ -234,7 +184,7 @@ body main {
 		}
 }
 
-/* line 264, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 228, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body main .card {
 		position: relative;
 		top: 0;
@@ -247,18 +197,18 @@ body main .card {
 }
 
 @media (min-width: 840px) {
-		/* line 264, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+		/* line 228, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 		body main .card {
 				margin: 1em auto;
 		}
 }
 
-/* line 283, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 247, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body main .card:hover {
 		top: -2px;
 }
 
-/* line 287, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 251, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body main .card-img {
 		display: block;
 		width: 95%;
@@ -267,7 +217,7 @@ body main .card-img {
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* line 297, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 261, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body main .card-text-container {
 		display: flex;
 		flex: 1;
@@ -275,18 +225,18 @@ body main .card-text-container {
 		justify-content: space-between;
 }
 
-/* line 304, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 268, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body main .cards a {
 		text-decoration: none;
 }
 
-/* line 308, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 272, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body main .card-tag {
 		letter-spacing: .2em;
 		color: #336FFF;
 }
 
-/* line 317, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 281, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body footer {
 		margin: 0 auto;
 		padding: 10px;
