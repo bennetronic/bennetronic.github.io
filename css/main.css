@@ -225,18 +225,25 @@ body main .card-text-container {
 		justify-content: space-between;
 }
 
-/* line 268, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 274, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body main .cards a {
 		text-decoration: none;
 }
 
-/* line 272, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+/* line 278, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body main .card-tag {
 		letter-spacing: .2em;
 		color: #336FFF;
 }
 
-/* line 281, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+@media (min-width: 840px) {
+		/* line 278, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
+		body main .card-tag {
+				align-self: bottom;
+		}
+}
+
+/* line 290, Users/jamesbennetts/Sites/Projects/bennetronic.github.io/css/main.scss */
 body footer {
 		margin: 0 auto;
 		padding: 10px;

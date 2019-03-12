@@ -259,10 +259,16 @@ body {
           }
 
           .card-text-container {
+              //height: 100%;
               display: flex;
               flex: 1;
               flex-direction: column;
               justify-content: space-between;
+
+              // @include desktop {
+              //     height: 100%;
+              //     justify-content: center;
+              // }
           }
 
           .cards a {
@@ -273,8 +279,11 @@ body {
               letter-spacing: .2em;
 
               color: map-get($colors, tags);
-          }
 
+              @include desktop {
+                    align-self: bottom;
+              }
+          }
 
     }
 
